@@ -1,0 +1,30 @@
+{
+  "name": "travisci",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.ts",
+    "build": "tsc --project ./",
+    "test": "mocha \\\"test/**/*.spec.js\\\"",
+    "test-coverage": "NODE_ENV=test istanbul cover _mocha —- -R spec",
+  },
+  "keywords": [],
+  "author": "Marko Turchyn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.6.10",
+    "mocha": "^9.2.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
