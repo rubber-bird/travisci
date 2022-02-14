@@ -6,7 +6,7 @@
     "start:dev": "nodemon ./src/index.ts",
     "build": "tsc --project ./",
     "test": "mocha \\\"test/**/*.spec.js\\\"",
-    "test-coverage": "NODE_ENV=test istanbul cover _mocha —- -R spec",
+    "test-coverage": "NODE_ENV=test istanbul cover _mocha —- -R spec"
   },
   "keywords": [],
   "author": "Marko Turchyn",
